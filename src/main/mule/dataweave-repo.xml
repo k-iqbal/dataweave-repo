@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="f4bf031e-e867-4682-9536-02cb5194a244" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="dataweave-repoFlow" doc:id="20e1c5b2-39ef-4213-8557-7b2881086999" >
+		<http:listener doc:name="Listener" doc:id="0be2e06e-3c15-44d6-ada2-c64ddb13ebb9" config-ref="HTTP_Listener_config" path="/test100"/>
+		<logger level="INFO" doc:name="Logger" doc:id="3525ab8e-90cc-447e-b27e-5930067ba57f" message="I am printing ..........."/>
+	</flow>
+</mule>
