@@ -37,18 +37,17 @@
 				<configuration>
 					<cloudHub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>${app.runtime}</muleVersion>
-						<username>${anypoint.username}</username>
-						<password>${anypoint.password}</password>
-						<businessGroup>${anypoint.businessGroup}</businessGroup>
-						<organization>${anypoint.organization}</organization>
-						<target>${env}</target>
-                    	<environment>Sandbox</environment>
-                    	<region>us-east-1</region>  <!-- Change to your CloudHub 2.0 region -->
-						<replicas>2</replicas>  <!-- Define the number of replicas -->
-						<runtimeVersion>4.4.0</runtimeVersion>
+						<provider>MC</provider>
+						<environment>Sandbox</environment>
+						<target>Cloudhub-US-East-2</target>
+						<server>Repository</server>
 						<applicationName>${app.name}</applicationName>
-						
+						<releaseChannel>NONE</releaseChannel>
+						<replicas>1</replicas>
+						<vCores>0.1</vCores>
+						<deploymentSettings>
+							<generatedDefaultPublicUrl>true</generatedDefaultPublicUrl>
+						</deploymentSettings>
 						
 					</cloudHub2Deployment>
 					<classifier>mule-application</classifier>
