@@ -9,6 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="dataweave-repoFlow" doc:id="20e1c5b2-39ef-4213-8557-7b2881086999" >
 		<http:listener doc:name="Listener" doc:id="0be2e06e-3c15-44d6-ada2-c64ddb13ebb9" config-ref="HTTP_Listener_config" path="/test100"/>
-		<logger level="INFO" doc:name="Logger" doc:id="3525ab8e-90cc-447e-b27e-5930067ba57f" message="I am printing ..........."/>
+		<set-payload value='#["It worked..."]' doc:name="Set Payload" doc:id="998d7838-b486-408b-a8ab-6338e92662c7" />
+		<logger level="INFO" doc:name="Logger" doc:id="3525ab8e-90cc-447e-b27e-5930067ba57f" message="#[payload]"/>
 	</flow>
 </mule>
