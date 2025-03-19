@@ -1,7 +1,12 @@
 <?xml version="1.0"?>
 <settings>
 
-  
+  <servers>
+    <server>
+      <id>Repository</id>
+      
+    </server>
+  </servers>
   <profiles>
     <profile>
       <id>Mule</id>
