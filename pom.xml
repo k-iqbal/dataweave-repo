@@ -15,6 +15,8 @@
 
 		<app.runtime>4.4.0-20230320</app.runtime>
 		<mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
+		<app.name>kiqbal-dataweave-repo</app.name>
+		<env>Sandbox</env>
 	</properties>
 
 	<build>
