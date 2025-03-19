@@ -35,7 +35,8 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHub2Deployment>
+					<classifier>mule-application</classifier>
+					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<provider>MC</provider>
 						<environment>Sandbox</environment>
@@ -49,8 +50,8 @@
 							<generatedDefaultPublicUrl>true</generatedDefaultPublicUrl>
 						</deploymentSettings>
 						
-					</cloudHub2Deployment>
-					<classifier>mule-application</classifier>
+					</cloudhub2Deployment>
+					
 				</configuration>
 			</plugin>
 		</plugins>
