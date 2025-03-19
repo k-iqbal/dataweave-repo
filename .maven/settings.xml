@@ -10,8 +10,8 @@
       </activation>
       <repositories>
         <repository>
-          <id>MuleRepository</id>
-          <name>MuleRepository</name>
+          <id>Repository</id>
+          <name>Repository</name>
           <url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
           <layout>default</layout>
           <releases>
