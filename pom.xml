@@ -45,9 +45,7 @@
 						<applicationName>${app.name}</applicationName>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
-						<deploymentSettings>
-							<generatedDefaultPublicUrl>true</generatedDefaultPublicUrl>
-						</deploymentSettings>
+						
 						
 					</cloudhub2Deployment>
 					
