@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>d56b6bba-44bc-4a95-be3c-f2e5d5d3923d</groupId>
+	<groupId>com.mycompany</groupId>
 	<artifactId>dataweave-repo</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
@@ -17,6 +17,8 @@
 		<app.runtime>4.4.0-20230320</app.runtime>
 		<mule.maven.plugin.version>4.0.0</mule.maven.plugin.version>
 		<app.name>kiqbal-dataweave-repo</app.name>
+		<anypoint.businessGroup>d56b6bba-44bc-4a95-be3c-f2e5d5d3923d</anypoint.businessGroup>
+		<anypoint.organization>Zcom</anypoint.organization>
 		<env>Sandbox</env>
 	</properties>
 
@@ -33,19 +35,22 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHubDeployment>
+					<cloudHub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
+						<businessGroup>${anypoint.businessGroup}</businessGroup>
+						<organization>${anypoint.organization}</organization>
+						<target>${env}</target>
+                    	<environment>Sandbox</environment>
+                    	<region>us-east-1</region>  <!-- Change to your CloudHub 2.0 region -->
+						<replicas>2</replicas>  <!-- Define the number of replicas -->
+						<runtimeVersion>4.4.0</runtimeVersion>
 						<applicationName>${app.name}</applicationName>
-						<environment>Sandbox</environment>
-						<workerType>MICRO</workerType>
-						<region>us-east-2</region>
-						<workers>1</workers>
-						<objectStoreV2>true</objectStoreV2>
 						
-					</cloudHubDeployment>
+						
+					</cloudHub2Deployment>
 					<classifier>mule-application</classifier>
 				</configuration>
 			</plugin>
