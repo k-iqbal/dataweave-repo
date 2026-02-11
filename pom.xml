@@ -12,13 +12,13 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<anypoint.username>k_iqbal_au_m2</anypoint.username>
-		<anypoint.password>localAuckland123@</anypoint.password>
+		<anypoint.username>kashif_iqbal_ms_1</anypoint.username>
+		<anypoint.password>IhaveKASHIFIQBALNZ123@</anypoint.password>
 		<app.runtime>4.4.0-20230320</app.runtime>
 		<mule.maven.plugin.version>4.0.0</mule.maven.plugin.version>
 		<app.name>kiqbal-dataweave-repo</app.name>
-		<anypoint.businessGroup>d56b6bba-44bc-4a95-be3c-f2e5d5d3923d</anypoint.businessGroup>
-		<anypoint.organization>Zcom</anypoint.organization>
+		<anypoint.businessGroup>3d68e9c2-2df8-4a79-b986-e39da34424b0</anypoint.businessGroup>
+		<anypoint.organization>BKI</anypoint.organization>
 		<env>Sandbox</env>
 	</properties>
 
@@ -45,10 +45,7 @@
 						<applicationName>${app.name}</applicationName>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
-						
-						
 					</cloudhub2Deployment>
-					
 				</configuration>
 			</plugin>
 		</plugins>
@@ -101,7 +98,6 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-	
 	<distributionManagement>
 		<repository>
 			<id>Repository</id>
